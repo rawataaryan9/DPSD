@@ -30,11 +30,9 @@
   </repositories>
 
   <modules>
-    <module>dis-api-web</module>
-    <module>dis-api-base</module>
-    <module>dis-api-client</module>
-    <module>dis-api-client-test</module>
-    <module>SnapdealBase</module>
+    <module>web</module>
+    <module>base</module>
+    <module>client</module>
   </modules>
 
   <distributionManagement>
