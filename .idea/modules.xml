@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dis-api.iml" filepath="$PROJECT_DIR$/dis-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dis-api-base/dis-api-base.iml" filepath="$PROJECT_DIR$/dis-api-base/dis-api-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dis-api-client/dis-api-client.iml" filepath="$PROJECT_DIR$/dis-api-client/dis-api-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dis-api-web/dis-api-web.iml" filepath="$PROJECT_DIR$/dis-api-web/dis-api-web.iml" />
+    </modules>
+  </component>
+</project>
