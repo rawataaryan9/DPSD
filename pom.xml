@@ -37,6 +37,7 @@
     <module>web</module>
     <module>base</module>
     <module>client</module>
+    <module>untitled</module>
   </modules>
 
   <distributionManagement>

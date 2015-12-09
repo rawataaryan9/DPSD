@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dis-api.iml" filepath="$PROJECT_DIR$/dis-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/base/dis-api-base.iml" filepath="$PROJECT_DIR$/base/dis-api-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/client/dis-api-client.iml" filepath="$PROJECT_DIR$/client/dis-api-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/dis-api-web.iml" filepath="$PROJECT_DIR$/web/dis-api-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/dis-api-base.iml" filepath="$PROJECT_DIR$/base/dis-api-base.iml" group="dis-api and modules" />
+      <module fileurl="file://$PROJECT_DIR$/client/dis-api-client.iml" filepath="$PROJECT_DIR$/client/dis-api-client.iml" group="dis-api and modules" />
+      <module fileurl="file://$PROJECT_DIR$/dp-web/dp-web.iml" filepath="$PROJECT_DIR$/dp-web/dp-web.iml" />
     </modules>
   </component>
 </project>

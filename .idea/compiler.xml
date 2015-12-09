@@ -29,7 +29,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="dis-api-web" />
       </profile>
       <profile default="false" name="Annotation profile for dis-api-client" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -38,12 +37,28 @@
         <processorPath useClasspath="true" />
         <module name="dis-api-client" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="untitled" />
+      </profile>
+      <profile default="false" name="Annotation profile for dp-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="dp-web" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dis-api" target="1.5" />
       <module name="dis-api-base" target="1.7" />
       <module name="dis-api-client" target="1.7" />
       <module name="dis-api-web" target="1.7" />
+      <module name="dp-web" target="1.7" />
+      <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
