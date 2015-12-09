@@ -17,12 +17,12 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for dis-api-client" enabled="true">
+      <profile default="false" name="Annotation profile for dis-api-base" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="dis-api-client" />
+        <module name="dis-api-base" />
       </profile>
       <profile default="false" name="Annotation profile for dis-api-web" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -31,12 +31,12 @@
         <processorPath useClasspath="true" />
         <module name="dis-api-web" />
       </profile>
-      <profile default="false" name="Annotation profile for dis-api-base" enabled="true">
+      <profile default="false" name="Annotation profile for dis-api-client" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="dis-api-base" />
+        <module name="dis-api-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

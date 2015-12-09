@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DPSD.iml" filepath="$PROJECT_DIR$/DPSD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dis-api.iml" filepath="$PROJECT_DIR$/dis-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/dis-api-base.iml" filepath="$PROJECT_DIR$/base/dis-api-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/dis-api-client.iml" filepath="$PROJECT_DIR$/client/dis-api-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/dis-api-web.iml" filepath="$PROJECT_DIR$/web/dis-api-web.iml" />
     </modules>
   </component>

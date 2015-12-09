@@ -12,6 +12,10 @@
 
   <repositories>
     <repository>
+      <id>JBoss repository</id>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
       <id>server.development.com-releases</id>
       <name>server.development.com-releases</name>
       <url>http://server.development.com:8080/libs-release-local</url>
