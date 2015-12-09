@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.snapdeal.dis.services.util.ExecutionMode;
 import com.snapdeal.dis.services.service.ExpressionService;
 import com.snapdeal.dis.services.sro.ExpressionSRO;
 
@@ -58,10 +57,7 @@ public class ExpressionController {
 			@RequestParam(value="expression") String expression,
 			@RequestParam(value="action") String action){
 		
-		String namespace = name.substring(name.lastIndexOf('.') + 1);
-		String referenceName = name.substring(0, name.lastIndexOf("."));
-		
-		ExpressionSRO expSRO = new ExpressionSRO(id,namespace,referenceName,expression);
+		ExpressionSRO expSRO = new ExpressionSRO(id,name,expression);
 		
 		expressionService.executeActions(expSRO,action);
 		

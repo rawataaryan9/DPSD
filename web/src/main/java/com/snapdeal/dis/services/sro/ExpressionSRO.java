@@ -4,10 +4,8 @@ import java.util.Date;
 
 public class ExpressionSRO {
 	private int id;
-	private String namespace;
 	private String referenceName;
 	private String expression;
-	private String executionMode;
 	private boolean isDeleted;
 	private String createdBy;
 	private String createdTime;
@@ -18,13 +16,6 @@ public class ExpressionSRO {
 	
 	public void setId(int id) {
 		this.id = id;
-	}
-	
-	public String getNamespace() {
-		return namespace;
-	}
-	public void setNamespace(String namespace) {
-		this.namespace = namespace;
 	}
 	
 	public String getReferenceName() {
@@ -44,35 +35,24 @@ public class ExpressionSRO {
 		super();
 	}
 
-	public ExpressionSRO(int id,  String namespace, String referenceName,
+	public ExpressionSRO(int id, String referenceName,
 			String expression) {
 		super();
 		this.id = id;
-		this.namespace = namespace;
 		this.referenceName = referenceName;
 		this.expression = expression;
 		
 	}
 
-	public ExpressionSRO(int id, String namespace, String referenceName, String expression, String executionMode,
+	public ExpressionSRO(int id, String referenceName, String expression,
 			boolean isDeleted, String createdBy, String createdTime) {
 		super();
 		this.id = id;
-		this.namespace = namespace;
 		this.referenceName = referenceName;
 		this.expression = expression;
-		this.executionMode = executionMode;
 		this.isDeleted = isDeleted;
 		this.createdBy = createdBy;
 		this.createdTime = createdTime;
-	}
-
-	public String getExecutionMode() {
-		return executionMode;
-	}
-
-	public void setExecutionMode(String executionMode) {
-		this.executionMode = executionMode;
 	}
 
 	public boolean isDeleted() {

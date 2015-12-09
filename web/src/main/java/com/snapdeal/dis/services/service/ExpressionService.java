@@ -3,8 +3,6 @@ package com.snapdeal.dis.services.service;
 import java.util.List;
 
 import com.snapdeal.dis.services.sro.ExpressionSRO;
-import com.snapdeal.dis.services.util.ExecutionMode;
-import com.snapdeal.dis.services.sro.ExpressionSRO;
 
 //Service Interface for Expression
 public interface ExpressionService {

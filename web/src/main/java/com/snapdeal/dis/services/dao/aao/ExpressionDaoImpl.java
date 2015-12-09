@@ -24,7 +24,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.snapdeal.dis.services.dao.ExpressionDao;
 import com.snapdeal.dis.services.entity.ExpressionDO;
-import com.snapdeal.dis.services.util.ExecutionMode;
 import com.snapdeal.dis.services.sro.ExpressionSRO;
 
 //Dao Interface implementation
@@ -67,20 +66,6 @@ public class ExpressionDaoImpl implements ExpressionDao {
 		return null;
 	}
 
-	// Insertion of an expression in expression table.
-	//@Transactional
-	public boolean insertExpression(String referenceName, String namespace,String expression, String createdBy, ExecutionMode executionMode) {
-		ExpressionDO exprDO = new ExpressionDO(referenceName,namespace,expression,executionMode,false,createdBy);
-		try{
-			htemp.save(exprDO);
-			System.out.println("insertion successfull");
-			return true;
-			} catch(RuntimeException e){
-				LOG.error("insertion of expression failed",e);
-				return false;
-			}
-	}
-
 	// Soft deletion of an expression by updating its field isDeleted as true.
 	//@Transactional
 	public boolean deleteExpressionById(int id) {
@@ -104,9 +89,9 @@ public class ExpressionDaoImpl implements ExpressionDao {
 		}
 	}
 
-	public ExpressionDO getExpressionByName(String namespace,String refName) {
-		Object[] params = {false,namespace,refName};
-		List<ExpressionDO> exprDO = htemp.find("select exp from ExpressionDO exp where exp.isDeleted = ? and exp.namespace = ? and exp.referenceName = ?",params);	
+	public ExpressionDO getExpressionByName(String refName) {
+		Object[] params = {false,refName};
+		List<ExpressionDO> exprDO = htemp.find("select exp from ExpressionDO exp where exp.isDeleted = ? and exp.referenceName = ?",params);
 		if(exprDO.size()>0){
 			return exprDO.get(0);
 		}
