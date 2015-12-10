@@ -1,9 +1,11 @@
 package com.snapdeal.dis.model;
 
+import java.util.Map;
+
 public class ExpressionSRO {
 	private int id;
 	private String referenceName;
-	private String expression;
+	private Map<String, Object> expression;
 	private boolean isDeleted;
 	private String createdBy;
 	private String createdTime;
@@ -22,19 +24,17 @@ public class ExpressionSRO {
 	public void setReferenceName(String referenceName) {
 		this.referenceName = referenceName;
 	}
-	
-	public String getExpression() {
+
+	public Map<String, Object> getExpression() {
 		return expression;
 	}
-	public void setExpression(String expression) {
+
+	public void setExpression(Map<String, Object> expression) {
 		this.expression = expression;
-	}
-		public ExpressionSRO() {
-		super();
 	}
 
 	public ExpressionSRO(int id, String referenceName,
-						 String expression) {
+						 Map<String, Object> expression) {
 		super();
 		this.id = id;
 		this.referenceName = referenceName;
@@ -42,7 +42,7 @@ public class ExpressionSRO {
 		
 	}
 
-	public ExpressionSRO(int id, String referenceName, String expression,
+	public ExpressionSRO(int id, String referenceName, Map<String, Object> expression,
 						 boolean isDeleted, String createdBy, String createdTime) {
 		super();
 		this.id = id;
