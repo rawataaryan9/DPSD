@@ -8,9 +8,7 @@ import com.snapdeal.base.exception.TransportException;
 import com.snapdeal.base.model.common.ServiceRequest;
 import com.snapdeal.base.model.common.ServiceResponse;
 import com.snapdeal.base.transport.service.ITransportService;
-import com.snapdeal.dis.model.ResponseCode;
-import com.snapdeal.dis.model.ViewRequest;
-import com.snapdeal.dis.model.ViewResponse;
+import com.snapdeal.dis.model.*;
 import com.snapdeal.dis.service.IDISAPIClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +23,7 @@ public class DISAPIClientServiceImpl implements IDISAPIClientService {
 
     private String            webServiceUrl;
     
-    private String            serviceUrl = new String("service/dis-api");
+    private String            serviceUrl = new String("snapdeal/");
 
     public void setTransportService(ITransportService service) {
         this.transportService = service;
@@ -53,11 +51,11 @@ public class DISAPIClientServiceImpl implements IDISAPIClientService {
     }
     
     @Override
-    public ViewResponse getSummarizedView(ViewRequest request) {
-        ViewResponse response = new ViewResponse();
-        String url = new StringBuilder(getServiceURL(request)).append("/getSummarizedView").toString();
+    public SampleResponse getAllExpressions(SampleRequest request) {
+        SampleResponse response = new SampleResponse();
+        String url = new StringBuilder(getServiceURL(request)).append("/allexpressions").toString();
         try {
-            response = (ViewResponse) transportService.executeRequest(url, request, null, ViewResponse.class);
+            response = (SampleResponse) transportService.executeRequest(url, request, null, SampleResponse.class);
         } catch (TransportException e) {
             response = getErrorResponse(response);
             response.setResponseCode(ResponseCode.ERROR);
