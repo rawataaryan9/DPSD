@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.snapdeal.dis</groupId>
-  <artifactId>dis-api</artifactId>
+  <artifactId>dp-admin</artifactId>
   <version>1.0-SNAPSHOT</version>
 
 
   <packaging>pom</packaging>
-  <name>dis-api</name>
+  <name>dp-admin</name>
 
   <repositories>
     <repository>
@@ -34,8 +34,8 @@
   </repositories>
 
   <modules>
-    <module>dp-base</module>
     <module>dp-web</module>
+    <module>dp-base</module>
     <module>dp-client</module>
   </modules>
 
@@ -52,7 +52,7 @@
     <snapdeal.base.version>5.0.1</snapdeal.base.version>
     <org.springframework.version>3.2.3.RELEASE</org.springframework.version>
     <org.springframework.ws.version>2.0.0-M1</org.springframework.ws.version>
-    <org.springframework.security.version>3.0.5.RELEASE</org.springframework.security.version>
+    <org.springframework.security.version>3.2.4.RELEASE</org.springframework.security.version>
     <slf4j.version>1.7.5</slf4j.version>
     <javax.servlet.version>3.0.1</javax.servlet.version>
     <aerospike.version>3.1.6</aerospike.version>

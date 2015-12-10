@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.snapdeal.sacs:SnapdealSACSBase:3.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/snapdeal/sacs/SnapdealSACSBase/3.0-SNAPSHOT/SnapdealSACSBase-3.0-20151008.113123-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/snapdeal/sacs/SnapdealSACSBase/3.0-SNAPSHOT/SnapdealSACSBase-3.0-20151008.113123-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/snapdeal/sacs/SnapdealSACSBase/3.0-SNAPSHOT/SnapdealSACSBase-3.0-20151008.113123-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

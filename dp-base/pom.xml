@@ -5,15 +5,15 @@
 
 	<parent>
 		<groupId>com.snapdeal.dis</groupId>
-		<artifactId>dis-api</artifactId>
+		<artifactId>dp-admin</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
 
 	<groupId>com.snapdeal.dis</groupId>
-	<artifactId>dis-api-base</artifactId>
+	<artifactId>dp-base</artifactId>
 	<version>${project.parent.version}</version>
-	<name>DIS API Base</name>
+	<name>DP ADMIN Base</name>
 	<packaging>jar</packaging>
 
 
