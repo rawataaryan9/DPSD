@@ -8,7 +8,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dp-web/pom.xml" />
-        <option value="$PROJECT_DIR$/base/pom.xml" />
+        <option value="$PROJECT_DIR$/dp-base/pom.xml" />
+        <option value="$PROJECT_DIR$/dp-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

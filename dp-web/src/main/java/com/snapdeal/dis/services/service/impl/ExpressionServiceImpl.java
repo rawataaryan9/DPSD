@@ -7,7 +7,7 @@ import java.util.List;
 import com.snapdeal.dis.services.dao.ExpressionDao;
 import com.snapdeal.dis.services.entity.ExpressionDO;
 import com.snapdeal.dis.services.service.ExpressionService;
-import com.snapdeal.dis.services.sro.ExpressionSRO;
+import com.snapdeal.dis.model.ExpressionSRO;
 import com.snapdeal.dis.services.util.Actions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

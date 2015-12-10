@@ -1,7 +1,7 @@
 package com.snapdeal.dp.web;
 
 import com.snapdeal.dis.services.service.ExpressionService;
-import com.snapdeal.dis.services.sro.ExpressionSRO;
+import com.snapdeal.dis.model.ExpressionSRO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class ExpressionServiceTest {
     public void validateExpressionService(){
         List<ExpressionSRO> expressionSROList = expressionService.getAllExpressions();
         if(expressionSROList.size()>0){
-            System.out.println("working fine");
+            System.out.println("working fine: "+expressionSROList.get(0).getReferenceName()+", "+expressionSROList.get(0).getCreatedTime());
         }
         else{
             System.out.println("error");

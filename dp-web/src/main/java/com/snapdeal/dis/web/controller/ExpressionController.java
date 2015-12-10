@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.snapdeal.dis.services.service.ExpressionService;
-import com.snapdeal.dis.services.sro.ExpressionSRO;
+import com.snapdeal.dis.model.ExpressionSRO;
 
 /*
  * Controller for Handling Servlet Request*/

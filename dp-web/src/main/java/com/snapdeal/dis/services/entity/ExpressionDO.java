@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.snapdeal.dis.services.sro.ExpressionSRO;
+import com.snapdeal.dis.model.ExpressionSRO;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 

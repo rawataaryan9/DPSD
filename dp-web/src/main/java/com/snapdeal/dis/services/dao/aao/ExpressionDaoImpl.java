@@ -8,23 +8,16 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import com.snapdeal.dis.services.dao.ExpressionDao;
-import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.criterion.Criterion;
-import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.support.DataAccessUtils;
-import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.snapdeal.dis.services.dao.ExpressionDao;
 import com.snapdeal.dis.services.entity.ExpressionDO;
-import com.snapdeal.dis.services.sro.ExpressionSRO;
 
 //Dao Interface implementation
 
