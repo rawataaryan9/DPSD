@@ -35,7 +35,7 @@ public class DPAdminClientServiceImpl implements IDPAdminClientService {
     }
     
     private <T extends ServiceRequest> String getServiceURL(T request) {
-        return new StringBuilder("http://localhost:8080/dp-web/").append(serviceUrl).toString();
+        return new StringBuilder("http://localhost:8080/dp-web-1.0-SNAPSHOT/").append(serviceUrl).toString();
     }
 
     private <T extends ServiceResponse> T getErrorResponse(T response) {
