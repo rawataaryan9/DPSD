@@ -12,7 +12,7 @@ import java.util.List;
  */
 @XmlRootElement
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class SampleResponse extends ServiceResponse {
+public class GetAllExpressionsResponse extends ServiceResponse {
 
     private static final long serialVersionUID = -4270688164401220314L;
 
@@ -22,7 +22,7 @@ public class SampleResponse extends ServiceResponse {
     @Tag(6)
     private List<ExpressionSRO> listExpressionSRO;
 
-    public SampleResponse() {
+    public GetAllExpressionsResponse() {
         super();
         setResponseCode(ResponseCode.OK);
     }
@@ -46,7 +46,7 @@ public class SampleResponse extends ServiceResponse {
 
     @Override
     public String toString() {
-        return "SampleResponse{" +
+        return "GetAllExpressionsResponse{" +
                 "responseCode=" + responseCode +
                 ", listExpressionSRO=" + listExpressionSRO.size() +
                 '}';

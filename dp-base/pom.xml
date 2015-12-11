@@ -13,7 +13,7 @@
 	<groupId>com.snapdeal.dis</groupId>
 	<artifactId>dp-base</artifactId>
 	<version>${project.parent.version}</version>
-	<name>DP ADMIN Base</name>
+	<name>DIS API Base</name>
 	<packaging>jar</packaging>
 
 

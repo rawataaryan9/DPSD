@@ -9,21 +9,21 @@ import com.snapdeal.base.model.common.ServiceRequest;
 import com.snapdeal.base.model.common.ServiceResponse;
 import com.snapdeal.base.transport.service.ITransportService;
 import com.snapdeal.dis.model.*;
-import com.snapdeal.dis.service.IDISAPIClientService;
+import com.snapdeal.dis.service.IDPAdminClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
-@Service("disAPIClientService")
-public class DISAPIClientServiceImpl implements IDISAPIClientService {
+@Service("dpAdminClientService")
+public class DPAdminClientServiceImpl implements IDPAdminClientService {
 
     @Autowired
     private ITransportService transportService;
 
     private String            webServiceUrl;
     
-    private String            serviceUrl = new String("snapdeal/");
+    private String            serviceUrl = new String("service/");
 
     public void setTransportService(ITransportService service) {
         this.transportService = service;
@@ -31,11 +31,11 @@ public class DISAPIClientServiceImpl implements IDISAPIClientService {
 
     @PostConstruct
     public void init() {
-        transportService.registerService("/"+ serviceUrl+"/", "disapiserver.");
+        transportService.registerService("/"+ serviceUrl+"/", "dp-web");
     }
     
     private <T extends ServiceRequest> String getServiceURL(T request) {
-        return new StringBuilder(webServiceUrl).append(serviceUrl).toString();
+        return new StringBuilder("http://localhost:8080/dp-web/").append(serviceUrl).toString();
     }
 
     private <T extends ServiceResponse> T getErrorResponse(T response) {
@@ -51,11 +51,11 @@ public class DISAPIClientServiceImpl implements IDISAPIClientService {
     }
     
     @Override
-    public SampleResponse getAllExpressions(SampleRequest request) {
-        SampleResponse response = new SampleResponse();
-        String url = new StringBuilder(getServiceURL(request)).append("/allexpressions").toString();
+    public GetAllExpressionsResponse getAllExpressions(GetAllExpressionsRequest request) {
+        GetAllExpressionsResponse response = new GetAllExpressionsResponse();
+        String url = new StringBuilder(getServiceURL(request)).append("allexpressions").toString();
         try {
-            response = (SampleResponse) transportService.executeRequest(url, request, null, SampleResponse.class);
+            response = (GetAllExpressionsResponse) transportService.executeRequest(url, request, null, GetAllExpressionsResponse.class);
         } catch (TransportException e) {
             response = getErrorResponse(response);
             response.setResponseCode(ResponseCode.ERROR);
