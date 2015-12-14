@@ -34,9 +34,9 @@
   </repositories>
 
   <modules>
-    <module>dp-base</module>
-    <module>dp-web</module>
-    <module>dp-client</module>
+    <module>base</module>
+    <module>web</module>
+    <module>client</module>
   </modules>
 
   <distributionManagement>
